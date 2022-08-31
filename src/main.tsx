@@ -1,7 +1,8 @@
 import '@/styles/tailwind.css'
 
-import App from '@/app'
+import PasswordGeneratorApp from '@/app'
 
+// import '@/index.css'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
@@ -11,6 +12,6 @@ const root = createRoot(element)
 
 root.render(
   <BrowserRouter>
-    <App />
+    <PasswordGeneratorApp />
   </BrowserRouter>
 )

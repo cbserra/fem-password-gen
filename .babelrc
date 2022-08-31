@@ -1,0 +1,8 @@
+{
+    "presets": [
+        ["@babel/preset-env", { // 1
+            "targets": { // 2
+                "node": 10 }}],
+        "@babel/preset-typescript"]
+
+}

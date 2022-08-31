@@ -1,7 +1,7 @@
 const config = {
   semi: false,
   tabWidth: 2,
-  printWidth: 120,
+  printWidth: 100,
   singleQuote: true,
   jsxSingleQuote: true,
   trailingComma: 'none',
@@ -9,7 +9,7 @@ const config = {
   endOfLine: 'auto',
   importOrder: ['^@/styles/(.*)$', '^@/components(.*)$', '^@/(.*)$', '^[./]', '^'],
   importOrderSeparation: true,
-  importOrderSortSpecifiers: true,
+  importOrderSortSpecifiers: true
 }
 
 module.exports = config

@@ -1,0 +1,51 @@
+
+:root {
+    --clr-dark-gray: hsl(247, 11%, 15%);
+    --clr-gray: hsl(251, 9%, 53%);
+    --clr-almost-white: hsl(252, 11%, 91%);
+    --clr-very-dark-gray: hsl(248, 15%, 11%);
+    --clr-neon-green: hsl(127, 100%, 82%);
+    --clr-red: hsl(0, 91%, 63%);
+    --clr-orange: hsl(13, 95%, 66%);
+    --clr-yellow: hsl(42, 91%, 68%);
+    --font-family: 'JetBrains Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--clr-very-dark-gray);
+    font-family: var(--font-family);
+    color: var(--clr-almost-white);
+}
+
+.text-body {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.text-heading-sm {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--clr-gray)
+}
+
+.text-heading-md {
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.text-heading-lg {
+    font-size: 32px;
+    line-height: 43px;
+}

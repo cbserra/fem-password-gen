@@ -1,43 +1,40 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+// const { fontFamily } = require('tailwindcss/defaultTheme')
+// const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'class',
+  content: ['*.html','./src/**/*.{js,jsx,ts,tsx}'],
+  // darkMode: 'class',
   theme: {
+    backgroundImage: {
+      'checkmark': "url('/../assets/images/icon-check.svg')",
+    },
     colors: {
       primary: {
-        1: colors.sky[200],
-        2: colors.sky[300],
-        3: colors.sky[400],
-        4: colors.sky[500],
-        5: colors.sky[600],
-        6: colors.sky[700]
+        'dark-gray': 'hsl(247, 11%, 15%)',
+        gray: '#817D92',
+        'almost-white': '#E6E5EA',
+        'very-dark-gray': '#18171F'
       },
       secondary: {
-        1: colors.purple[200],
-        2: colors.purple[300],
-        3: colors.purple[400],
-        4: colors.purple[500],
-        5: colors.purple[600],
-        6: colors.purple[700]
+        'neon-green': '#A4FFAF',
+        red: '#F64A4A',
+        orange: '#FB7C58',
+        yellow: '#F8CD65'
       },
-      main: {
-        1: colors.white,
-        2: colors.neutral[50],
-        3: colors.neutral[200],
-        4: colors.neutral[500],
-        5: colors.neutral[600],
-        6: colors.neutral[700],
-        7: colors.neutral[800],
-        8: colors.neutral[900]
-      },
-      transparent: colors.transparent
+
+      transparent: 'transparent'
     },
     fontFamily: {
-      primary: ['Inter', ...fontFamily.sans]
+      primary: ['JetBrains Mono', 'monospace']
+    },
+    fontSize: {
+      base: '62.5%',
+      body: ['1.8rem', '2.3rem'],
+      'heading-sm': ['1.6rem', '2.1rem'],
+      'heading-md': ['2.4rem', '3.1rem'],
+      'heading-lg': ['3.2rem', '4.3rem']
     }
   },
   plugins: []

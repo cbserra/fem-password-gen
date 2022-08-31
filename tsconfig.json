@@ -5,7 +5,7 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -13,12 +13,16 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "preserve",
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
-    }
+    },
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "types": ["jest", "node"],
+    "composite": true
   },
   "include": ["./src"],
   "references": [{ "path": "./tsconfig.node.json" }]
