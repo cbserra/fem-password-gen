@@ -2,16 +2,14 @@ import '@/styles/tailwind.css'
 
 import PasswordGeneratorApp from '@/app'
 
-// import '@/index.css'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
 
 const element = document.getElementById('__app') as HTMLDivElement
-
 const root = createRoot(element)
 
 root.render(
-  <BrowserRouter>
+  <StrictMode>
     <PasswordGeneratorApp />
-  </BrowserRouter>
+  </StrictMode>
 )

@@ -1,22 +1,35 @@
+import { twclsx } from '@/utils/twclsx'
+
 import React from 'react'
 
 interface CheckboxOptions {
-    label: string,
-    id: string,
-    classNames: string,
+  label: string
+  id: string
+  classNames: string
+  index: number
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  checked?: boolean
 }
 
 const Checkbox = (params: CheckboxOptions) => {
-    const { label, id, classNames } = params
+  const { label, id, classNames, handleChange } = params
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [checked, setChecked] = React.useState(false)
   return (
-    <div className="password__gen-options--checkbox-label flex items-end justify-start w-full gap-x-[2.0rem]">
-      <input type="checkbox" name={`${id}`} id={`${id}`} className={`${classNames} password__gen-options--checkbox`} />
-      <label htmlFor={`${id}`}>
-        <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg">
-          <path stroke="#18171F" strokeWidth="3" fill="none" d="M1 5.607 4.393 9l8-8"/>
-        </svg>
-        {label}
-      </label>
+    <div
+      className={twclsx(
+        `checkbox checkbox-${id} password__gen-options--checkbox-label flex items-end justify-start w-full gap-x-[2.0rem]`
+      )}
+    >
+      <input
+        type='checkbox'
+        name={`${id}`}
+        id={`${id}`}
+        className={twclsx(`${classNames} password__gen-options--checkbox`)}
+        onChange={handleChange}
+        onClick={() => setChecked((prevValue) => !prevValue)}
+      />
+      <label htmlFor={`${id}`}>{label}</label>
     </div>
   )
 }

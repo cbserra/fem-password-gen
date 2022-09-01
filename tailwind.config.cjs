@@ -8,7 +8,7 @@ module.exports = {
   // darkMode: 'class',
   theme: {
     backgroundImage: {
-      'checkmark': "url('/../assets/images/icon-check.svg')",
+      'checkmark': "url('../assets/images/icon-check.svg')"
     },
     colors: {
       primary: {
