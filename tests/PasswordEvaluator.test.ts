@@ -7,3 +7,11 @@ test("provided a strong password, should return highest score from 'zxcvbn' func
   console.log(score)
   expect(score).toBe(4)
 })
+
+test("provided a weak password, should return lowest score from 'zxcvbn' function", () => {
+  const actualPassword = 'password'
+  const score = evaluatePassword(actualPassword)
+
+  console.log(score)
+  expect(score).toBe(0)
+})

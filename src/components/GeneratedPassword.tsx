@@ -18,7 +18,9 @@ const GeneratedPassword: FC<GeneratedPasswordProps> = (params: {
     >
       <input
         type='text'
-        className={twclsx('password__gen-input--text appearance-none bg-primary-dark-gray')}
+        className={twclsx(
+          'password__gen-input--text appearance-none bg-primary-dark-gray w-full focus:outline-none text-primary-almost-white'
+        )}
         value={passwordResult?.password || ''}
         readOnly
         placeholder='P4$5W0rD!'

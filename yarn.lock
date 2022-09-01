@@ -43,7 +43,7 @@
     json5 "^2.1.2"
     semver "^6.3.0"
 
-"@babel/core@^7.11.6", "@babel/core@^7.12.3", "@babel/core@^7.17.10":
+"@babel/core@^7.11.6", "@babel/core@^7.12.3", "@babel/core@^7.17.10", "@babel/core@^7.18.13":
   version "7.18.13"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.18.13.tgz#9be8c44512751b05094a4d3ab05fc53a47ce00ac"
   integrity sha512-ZisbOvRRusFktksHSG6pjj1CSvkPkcZq/KHD45LAkVP/oiHJkNBZWfpvlLmX8OtHDG8IuzsFlVRWo08w7Qxn0A==
@@ -1432,9 +1432,9 @@
     picomatch "^2.2.2"
 
 "@sinclair/typebox@^0.24.1":
-  version "0.24.33"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.33.tgz#e7852f8cdd2fd93a9ea4de17a2dccd788a8bf50a"
-  integrity sha512-c5p4Ib38ILOGfeYZWIu2Ms6EDdc2PGehzEYLevsvZ1njIt4Jt66E++4pjpBpgh+yJFj4ahnbKfYahOyLxvTBCw==
+  version "0.24.34"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.34.tgz#35b799cf98a203d1940c8ce06688f9a09fbc0f50"
+  integrity sha512-x3ejWKw7rpy30Bvm6U0AQMOHdjqe2E3YJrBHlTxH0KFsp77bBa+MH324nJxtXZFpnTy/JW2h5HPYVm0vG2WPnw==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -2539,9 +2539,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.202:
-  version "1.4.237"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.237.tgz#c695c5fedc3bb48f04ba1b39470c5aef2aaafd84"
-  integrity sha512-vxVyGJcsgArNOVUJcXm+7iY3PJAfmSapEszQD1HbyPLl0qoCmNQ1o/EX3RI7Et5/88In9oLxX3SGF8J3orkUgA==
+  version "1.4.240"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.240.tgz#b11fb838f2e79f34fbe8b57eec55e7e5d81ee6ea"
+  integrity sha512-r20dUOtZ4vUPTqAajDGonIM1uas5tf85Up+wPdtNBNvBSqGCfkpvMVvQ1T8YJzPV9/Y9g3FbUDcXb94Rafycow==
 
 emittery@^0.10.2:
   version "0.10.2"
@@ -4774,6 +4774,11 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-hook-form@^7.34.2:
+  version "7.34.2"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.34.2.tgz#9ac6d1a309a7c4aaa369d1269357a70e9e9bf4de"
+  integrity sha512-1lYWbEqr0GW7HHUjMScXMidGvV0BE2RJV3ap2BL7G0EJirkqpccTaawbsvBO8GZaB3JjCeFBEbnEWI1P8ZoLRQ==
+
 react-icons@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
@@ -5591,9 +5596,9 @@ universalify@^2.0.0:
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
 update-browserslist-db@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.5.tgz#be06a5eedd62f107b7c19eb5bcefb194411abf38"
-  integrity sha512-dteFFpCyvuDdr9S/ff1ISkKt/9YZxKjI9WlRR99c180GaztJtRa/fn18FdxGVKVsnPY7/a/FDN68mcvUmP4U7Q==
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.6.tgz#044fddb5c26989628da5cff7a82ce1472152bce6"
+  integrity sha512-We7BqM9XFlcW94Op93uW8+2LXvGezs7QA0WY+f1H7RR1q46B06W6hZF6LbmOlpCS1HU22q/6NOGTGW5sCm7NJQ==
   dependencies:
     escalade "^3.1.1"
     picocolors "^1.0.0"

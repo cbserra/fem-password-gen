@@ -5,12 +5,10 @@
 @tailwind utilities;
 
 @layer base {
-  * {
+  *,
+  *::before,
+  *::after {
     @apply box-border m-0 p-0;
-  }
-
-  h1 {
-    @apply font-primary text-heading-sm font-bold text-primary-gray;
   }
 
   html {
@@ -22,6 +20,11 @@
     @apply min-h-screen flex flex-col items-center justify-center;
   }
 
+  h1 {
+    @apply font-primary text-heading-sm font-bold text-primary-gray;
+  }
+
+  /* START LABEL/CHECKBOX */
   .checkbox > label {
     @apply text-heading-sm relative;
   }
@@ -39,12 +42,54 @@
   }
 
   .checkbox > input[type='checkbox']:not(:checked) {
-    @apply border-2 border-solid border-primary-almost-white
+    @apply border-2 border-solid border-primary-almost-white;
   }
 
   .checkbox > input[type='checkbox']:checked {
     @apply bg-secondary-neon-green bg-no-repeat bg-center bg-checkmark;
   }
+  /* END LABEL/CHECKBOX */
+
+  /* START INPUT RANGE/SLIDER */
+  input[type='range'] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    padding: 0.4rem;
+    height: 0.8rem;
+    overflow: hidden;
+    @apply bg-primary-very-dark-gray;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    @apply appearance-none w-[2.8rem] h-[2.8rem] bg-primary-almost-white rounded-full cursor-pointer;
+    @apply hover:bg-primary-very-dark-gray hover:outline-2 hover:outline-secondary-neon-green hover:outline;
+
+    /* position: absolute; */
+    /* @apply after:w-full after:h-[.8rem] after:bg-secondary-neon-green after:absolute after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 after:rounded-full; */
+  }
+
+  input[type='range']::-webkit-slider-runnable-track {
+    /* @apply bg-secondary-neon-green; */
+    @apply appearance-none w-full h-[.8rem] bg-primary-almost-white rounded-full cursor-pointer;
+    box-shadow: -500px 0 0 500px #43e5f7;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  input[type='range']:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  input[type='range']::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  /* END INPUT RANGE/SLIDER */
 }
 
 @layer components {
@@ -64,8 +109,6 @@
 }
 
 @layer utilities {
-  
-
   .layout {
     @apply w-10/12 sm:w-11/12 max-w-3xl mx-auto;
   }

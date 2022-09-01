@@ -1,9 +1,9 @@
 import Form from '@/components/Form'
 import GeneratedPassword from '@/components/GeneratedPassword'
+import Heading from '@/components/Heading'
 
 import { GeneratePasswordOptions, PasswordResult, UNTITLED } from '@/types/Types'
 import { generatePasswordResult } from '@/utils/PasswordUtils'
-import { twclsx } from '@/utils/twclsx'
 
 import React from 'react'
 
@@ -55,7 +55,7 @@ const PasswordGeneratorApp: React.FunctionComponent = () => {
 
   return (
     <>
-      <h1 className={twclsx('text-heading-sm')}>Password Generator</h1>
+      <Heading />
       <GeneratedPassword passwordResult={passwordResult} />
       <Form
         passwordResult={passwordResult}
