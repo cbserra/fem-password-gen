@@ -41,11 +41,12 @@
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
     "@vitejs/plugin-react": "^1.3.0",
+    "@yarnpkg/sdks": "^2.6.3",
     "autoprefixer": "^10.4.7",
     "cz-conventional-changelog": "3.3.0",
     "cz-emoji": "^1.3.2-canary.2",
     "eslint": "^8.12.0",
-    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react": "latest",
     "husky": "^7.0.4",
     "jest": "^29.0.1",
     "lint-staged": "^12.3.1",
@@ -65,15 +66,14 @@
   ],
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
       "prettier --write"
     ],
-    "**/*.{css,scss,md,html,json}": [
+    "**/*.{css,scss,md,html,json.yml}": [
       "prettier --write"
     ]
   }

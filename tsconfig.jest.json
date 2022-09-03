@@ -1,8 +1,8 @@
 {
-  "extends": "/tsconfig.json",
+  "extends": "./tsconfig.json",
   "references": [
     {
-      // "name": "fem-password-gen",
+      "name": "fem-password-gen",
       "path": "./tsconfig.jest.json"
     }
   ],
@@ -11,14 +11,14 @@
     "paths": {
       "@/*": ["*"]
     },
-    "types": ["jest"],
-    "rootDir": ".",
+    "types": ["jest", "node"],
+    "rootDir": "./tests",
     "noEmit": true,
     "composite": true,
     "declaration": true
   },
-  "include": ["./tests", "./src"],
-  "moduleNameMapper": {
-    "^@/(.*)$": "<rootDir>/../src/$1"
-  }
+  "include": ["./tests",],
+  // "moduleNameMapper": {
+  //   "^@/(.*)$": "<rootDir>/../src/$1"
+  // }
 }
